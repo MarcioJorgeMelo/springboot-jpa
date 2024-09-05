@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.hibernatejpa.curso.entities.User;
 import com.hibernatejpa.curso.repositories.UserRepository;
+import com.hibernatejpa.curso.services.exceptions.ResourceNotFoundException;
 
 @Service
 public class UserService {
@@ -25,7 +26,7 @@ public class UserService {
 
         Optional<User>  obj = repository.findById(id);
 
-        return  obj.get();
+        return  obj.orElseThrow(() -> new ResourceNotFoundException(id));
 
     }
 
