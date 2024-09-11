@@ -1,4 +1,4 @@
-##Projeto web services com SpringBoot e JPA / Hibernate (Projeto web services with SpringBoot and JPA / Hibernate)
+## Projeto web services com SpringBoot e JPA / Hibernate (Projeto web services with SpringBoot and JPA / Hibernate)
 
 Nessa aplicação back-end **Java** utilizo de implementação do modelo de domínio, estrutura de camadas lógicas, configuração e povoamento do banco H2, CRUD e tratamento de exceções.
 
